@@ -1,9 +1,10 @@
 import React from 'react'
+import Hero from './components/Hero'
 
 const App = () => {
   return (
     <div>
-      <h1 className="text-center">3Lancer</h1>
+      <Hero/>
     </div>
   )
 }
