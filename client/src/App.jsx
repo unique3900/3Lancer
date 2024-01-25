@@ -4,6 +4,7 @@ import Testimonials from './components/Testimonials/Testimonials'
 import Navbar from './layout/Navbar'
 import { Routes, Route } from 'react-router-dom';
 import Register from './components/Authentication/Register';
+import Login from './components/Authentication/Login';
 const App = () => {
   return (
     <div>
@@ -11,6 +12,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Hero />} />
         <Route path='/register' element={<Register />} />
+        <Route path='/login' element={<Login />} />
         
       </Routes>
       
