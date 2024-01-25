@@ -1,6 +1,7 @@
 import React from "react";
 
 import { registrationDropDown } from '../../data/RegistrationData';
+import { Link } from "react-router-dom";
 const Register = () => {
   return (
     <div className="min-h-screen bg-white flex flex-col justify-center items-center">
@@ -84,7 +85,7 @@ const Register = () => {
           <label for="select" class="block mb-2 text-sm font-medium  ">
             You are a?
           </label>
-                  <select name="select" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:focus:ring-blue-500 dark:focus:border-blue-500" id="">
+                  <select name="select" className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:focus:ring-blue-500 dark:focus:border-blue-500" id="">
                       <optgroup label="Select Who You Are"className="py-2 mb-2">
                           
                           {registrationDropDown.map((item) => (
@@ -93,11 +94,14 @@ const Register = () => {
                       </optgroup>
           </select>
               </div>
-              
               <div class="mb-2 col-span-2">
                             <button type="submit" className="bg-pink-700 cursor-pointer px-3 py-2 text-white font-bold w-full">Register</button>
-              </div> 
-      </form>
+              </div>
+              <div className="mt-1">
+                  <p className="">Already Have an Account? <span className="text-indigo-600"><Link to={'/login'}>Login Now</Link></span></p>
+              </div>
+          </form>
+          
     </div>
   );
 };
