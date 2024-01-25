@@ -1,0 +1,1 @@
+export const companyLogo = ['./assets/apple-logo.png','./assets/beast-logo.png','./assets/google-logo.png','./assets/msn-logo.png','./assets/snap-logo.png']
